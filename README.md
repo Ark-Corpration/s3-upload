@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: Ark-Corpration/s3-sync-action@master
+    - uses: Ark-Corpration/s3-upload@master
       with:
         args: --acl public-read --follow-symlinks --delete
       env:
